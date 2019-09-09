@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="A really cool site!">
+</head>
+<style>
+    .center {
+        text-align: center;
+    }
+
+    .next {
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <section class='center'>
+        <h1>Counter: Increase by 1 or by 2</h1>
+        <h2>Counter: {{ session['count'] }}</h2>
+
+        <form action="/" class="next">
+            <button>Click for +1</button>
+        </form>
+        <form action="/clear" class="next">
+            <button>Clear All</button>
+        </form>
+        <form action="/add" class="next">
+            <button>Add 2</button>
+        </form>
+    </section>
+
+
+</body>
+
+</html>
